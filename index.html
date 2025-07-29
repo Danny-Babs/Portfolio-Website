@@ -1,9 +1,5 @@
 <!DOCTYPE HTML>
-<!--
-	Hyperspace by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
+
 <html>
 	<head>
 		<title>Danny’s Data Portfolio</title>
@@ -11,6 +7,35 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+		<!-- Slider CSS for Multilingual Welcome -->
+		<style>
+			.marquee {
+			  width: 100%;
+			  overflow: hidden;
+			  white-space: nowrap;
+			  box-sizing: border-box;
+			}
+
+
+			.marquee p {
+			  display: inline-block;
+			  padding-left: 100%;
+			  animation: marquee 20s linear infinite;
+			  font-size: 2.5em;
+			  color: #fff;
+			  font-weight: bold;
+			}
+
+
+			
+
+		  
+			@keyframes marquee {
+			  0%   { transform: translateX(0); }
+			  100% { transform: translateX(-100%); }
+			}
+		  </style>
 	</head>
 	<body class="is-preload">
 
@@ -33,7 +58,10 @@
 				<!-- Intro -->
 					<section id="intro" class="wrapper style1 fullscreen fade-up">
 						<div class="inner">
-							<h1>Hello </h1>
+							<!-- Multilingual Welcome Scrolling Text -->
+                           <div class="marquee">
+	                         <p>Welcome &nbsp;&nbsp;&nbsp; Bienvenue &nbsp;&nbsp;&nbsp; Добро пожаловать &nbsp;&nbsp;&nbsp; Willkommen &nbsp;&nbsp;&nbsp; Bienvenido &nbsp;&nbsp;&nbsp; Welkom</p>
+                                 </div>
 							<p>This portfolio showcases data projects that demonstrate my ability to transform raw data into meaningful insights using SQL, Excel, Python, and Power BI <br> 
 								It features interactive visualizations and step-by-step analyses. Feel free to dive in and explore! </a><br />
 							<ul class="actions">
@@ -41,6 +69,8 @@
 							</ul>
 						</div>
 					</section>
+
+				
 
 				<!-- One -->
 					<section id="one" class="wrapper style2 spotlights">
